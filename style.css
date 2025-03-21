@@ -34,12 +34,14 @@ p, span, a{
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #11ABB0;
+        /* background: #11ABB0; */
+        background: #069e33;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #159296;
+        /* background: #159296; */
+        background: #222;
     }
 
 
@@ -71,7 +73,10 @@ p, span, a{
 
 #header{
 	min-height: 100vh;
-	background-image: url(https://cdn-images-1.medium.com/max/1600/1*5XH40dQSsBVFtvx3MO5VwQ.png);
+    background-image: url('./assets/code7.jpg'); 
+    /* code2/3/5/6 non     code 1/4 OK*/
+    /* changes   */
+/*    opacity: 0.80;*/
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -125,7 +130,8 @@ p, span, a{
 }
 
 .nav-content > li > a:hover, .active{
-    color: #11ABB0 !important;
+    /* color: #11ABB0 !important; */
+    color: #069e33 !important;
 }
 
 .toggler{
@@ -185,7 +191,8 @@ p, span, a{
 }
 
 #header .dropdown-item:hover, #header .dropdown-item.active{
-	color: #11ABB0;
+	/* color: #11ABB0; */
+    color:  #069e33 ;
 	background: transparent !important;
 }
 
@@ -195,21 +202,54 @@ p, span, a{
 	width: 100vw;
 }
 
-#header h1{
-	font-size: 80px;
-	color: #F5F5F5;
+/* Styles spécifiques pour le header */
+#header h1 {
+    font-size: 80px; /* Grande taille */
+    color: white !important; /* Force la couleur blanche */
+   
+    font-family: 'Raleway';
 }
 
-#header hr{
-	width: 200px;
-	border-color: #F5F5F5;
+#header h4 {
+    font-size: 20px; /* Taille normale */
+    font-weight: normal;
+    color: white !important; /* Force la couleur blanche */
+    font-family: "Lato";
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+#header hr {
+    border: 0; /* Supprime les bordures par défaut */
+    height: 2px;
+    background: white !important; /* Force la couleur blanche */
+    width: 60%; /* Largeur adaptée */
+    margin: auto;
 }
 
-#header h4{
-	font-size: 20px;
-	font-weight: normal;
-	color: #F5F5F5;
+
+/*mes changement pour label premieres page*/
+/* Style général */
+/* Section Header */
+/* Styles spécifiques pour la section Intro */
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les icônes */
 }
+
+    .social-icons a i {
+        font-size: 2.5rem; /* Taille des icônes */
+        color: white; /* Couleur par défaut */
+        transition: color 0.5s ease, transform 0.5s ease; /* Animation fluide */
+    }
+
+    .social-icons a:hover i {
+        color:cornsilk; /* Couleur au survol */
+        transform: scale(1.7); /* Légère augmentation */
+    }
 
 
 
@@ -263,7 +303,8 @@ p, span, a{
 }
 
 #cv .row h3{
-	border-bottom: 3px solid #11ABB0;
+	/* border-bottom: 3px solid #11ABB0; */
+    border-bottom: 3px solid  #069e33 ;
 	font-size: 24px;
 	padding-bottom: 5px;
     width: min-content;
@@ -284,7 +325,8 @@ p, span, a{
 }
 
 .skills > h4{
-    color: #11ABB0;
+    /* color: #11ABB0; */
+    color:  #069e33 ;
     margin-bottom: 40px;
 }
 
@@ -312,7 +354,8 @@ p, span, a{
 }
 
 .exp > h4{
-    color: #11ABB0;
+    /* color: #11ABB0; */
+    color: #069e33;
     margin-bottom: 40px;
 }
 
@@ -326,7 +369,8 @@ p, span, a{
 }
 
 #cv .box h6{
-	color: #11ABB0;
+	/* color: #11ABB0; */
+    color: #069e33;
 }
 
 #cv .box p{
@@ -363,10 +407,23 @@ p, span, a{
 	margin-bottom: 1.5rem;
     position: relative;
 }
+#languages{
+    color: #069e33;
+}
 
+/* bouton more infos  */
+.more-info {
+    color: #069e33;
+}
+.more-info i {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .more-info:hover {
+    color: #191919;
+  }
 
-
-#portfolio .row div .overlay {
+/* #portfolio .row div .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -406,9 +463,24 @@ p, span, a{
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
     -ms-transform: translate(-50%, -50%) !important;
-}
+} */
 
-
+/* ----------Bouton voir mon cv---------------- */
+.btn {
+    
+    /* background-color: #007bff; */
+    color: white;
+    
+  }
+  
+  .btn:hover {
+    background-color:#069e33;
+  }
+  
+  .btn i {
+    margin-right: 18px; /* Espacement entre l'icône et le texte */
+  }
+  
 
 
 
@@ -426,14 +498,16 @@ p, span, a{
 
 #contact div.left > span{
     font-size: 80px;
-    color: #11ABB0;
+    /* color: #11ABB0; */
+    color: #069e33;
     line-height: 0;
 }
 
 #contact h4{
     display: inline-block;
     padding-bottom: 5px;
-    border-bottom: 2px solid #11ABB0;
+    /* border-bottom: 2px solid #11ABB0; */
+    border-bottom: 2px solid #069e33;
     text-align: left;
     text-transform: uppercase;
     color: #F5F5F5;
@@ -502,7 +576,8 @@ p, span, a{
     left: 0;
     width: 0;
     height: 2px;
-    background: #11ABB0;
+    /* background: #11ABB0; */
+    background: #069e33;
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
@@ -558,13 +633,15 @@ input:focus ~ .focus-border, textarea:focus ~ .focus-border{
 input:focus ~ .label, textarea:focus ~ .label[for=message], input.has-value ~ .label, textarea.has-value ~ .label[for=message]{
     font-size: 12px !important;
     top: 0px !important;
-    color: #11ABB0 !important;
+    /* color: #11ABB0 !important; */
+    color: #069e33 !important;
 }
 
 
 .input-info{
     width: 100%;
-    color: #11ABB0;
+    /* color: #11ABB0; */
+    color: #069e33;
     text-align: left;
 }
 
