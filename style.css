@@ -206,8 +206,7 @@ p, span, a{
 #header h1 {
     font-size: 80px; /* Grande taille */
     color: white !important; /* Force la couleur blanche */
-   
-    font-family: 'Raleway';
+    font-family:Britannic;
 }
 
 #header h4 {
@@ -247,7 +246,7 @@ p, span, a{
     }
 
     .social-icons a:hover i {
-        color:cornsilk; /* Couleur au survol */
+        color:white; /* Couleur au survol */
         transform: scale(1.7); /* Légère augmentation */
     }
 
